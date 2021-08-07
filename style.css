@@ -1,0 +1,87 @@
+.startZone1
+{
+    border: black;
+    display: grid;
+    grid-template-columns: 103px 103px 103px;
+    grid-template-rows:  103px 103px;
+
+}
+
+.startZone2
+{
+    
+    top: 700px;
+    border: black;
+    display: grid;
+    grid-template-columns: 103px 103px 103px;
+    grid-template-rows:  103px 103px;
+
+}
+
+.xpieces
+{
+  background-image: url("X-big.png");
+  height: 100px;
+  width: 100px;
+  border: 2px black;
+  z-index: 15;
+}
+
+.opieces
+{
+  background-image: url("O-big.png");
+  height: 100px;
+  width: 100px;
+  border: 2px black;
+  z-index: 15;
+}
+
+.gameZone
+{
+    border: black;
+    display: grid;
+    z-index: -1;
+    position: relative;
+    grid-template-columns: 103px 103px 103px;
+    grid-template-rows:    103px 103px 103px;
+    
+}
+
+
+.pieceHolder
+{
+   background-color: aquamarine;
+   border: 2px solid black ;
+   min-width : 104px; 
+   min-height : 104px;
+}
+
+.winSlashHidden
+{
+  display : none;
+}
+
+.winIsUnknown
+{
+  display: none;
+}
+
+
+.winnerShow
+
+{
+  display : block;
+  position: absolute;
+  top : 118px;
+  left: 85px;
+  z-index: 24;
+}
+
+.winSlashActive
+{
+  display : block; 
+  z-index : 20;
+  position:absolute;
+  top: 46px;
+  left: 7px;
+}

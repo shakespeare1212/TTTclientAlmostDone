@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Tic Tac Toe - Drag and Drop</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script1.js"></script>
+    <script src="script-score-n-win.js"></script>
+    
+</head>
+
+<body>
+<div id="start1" class="startZone1">    
+    <div id="x1" class="piece xpieces"></div>
+    <div id="x2" class="piece xpieces"></div>
+    <div id="x3" class="piece xpieces"></div>
+    <div id="x4" class="piece xpieces"></div>
+    <div id="x5" class="piece xpieces"></div>
+    <div id="x6" class="piece xpieces"></div>
+</div>
+
+<div id="game" class="gameZone">
+    <div id="slot1" class="pieceHolder droppableSpace"></div>
+    <div id="slot2" class="pieceHolder droppableSpace"></div>
+    <div id="slot3" class="pieceHolder droppableSpace"></div>
+    <div id="slot4" class="pieceHolder droppableSpace"></div>
+    <div id="slot5" class="pieceHolder droppableSpace"></div>
+    <div id="slot6" class="pieceHolder droppableSpace"></div>
+    <div id="slot7" class="pieceHolder droppableSpace"></div>
+    <div id="slot8" class="pieceHolder droppableSpace"></div>
+    <div id="slot9" class="pieceHolder droppableSpace"></div>
+    <!-- slashes styled to invisible until a win happens
+        then they should apear over the approriate row, col, or diag -->
+    <img id="winSlash"   class="winSlashActive" src="winSlashRed.png"  alt="invisible Win Slash"><img>
+    <img id="winnerBox"  class="winnerShow"     src="Ywins.png"  alt="invisible Win Box"><img>
+   
+</div>
+
+<div id="start2" class="startZone2">    
+    <div id="o1" class="piece opieces"></div>
+    <div id="o2" class="piece opieces"></div>
+    <div id="o3" class="piece opieces"></div>
+    <div id="o4" class="piece opieces"></div>
+    <div id="o5" class="piece opieces"></div>
+    <div id="o6" class="piece opieces"></div>
+</div>
+<button id="testWins">TEST THE WIN</button><textarea id="slashCode">nw</textarea>
+</body>
+</head>
